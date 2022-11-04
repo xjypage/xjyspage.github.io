@@ -1,33 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Exhibition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #box {
-            margin: auto;
-            position: center;
-            color: white;
-            text-align:center;
-            font-size:20px;
-            }
-     body{
-    background-image:url(https://raw.githubusercontent.com/xjyspage/xjyspage.github.io/main/1408.jpg);
-   background-position: center center;
-   background-size:cover;
-   background-attachment:fixed;
-   background-color:#CCCCCC;
-        }
+        .main-intro {
+    height: 500px;
+}
+
+.main-intro h2 {
+    margin: 0 10px 0 0;
+    font-size: 34px;
+}
+
+.main-intro p {
+    margin: 15px auto;
+    line-height: 24px;
+}
+
+.main-intro img {
+    float: right;
+    width: 268px;
+    height: 432px;
+    padding: 30px 0;
+    margin-left: 50px;
+    border: 1px solid #eeeeee;
+}
+
+.main-intro video {
+    width: 800px;
+    height: 206px;
+}
+
+.main-intro a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    background-color: #df372c;
+    border-radius: 6px;
+}
+
+
+
+.main-part {
+    overflow: hidden;
+}
+
+.main-part li {
+    height: 120px;
+    margin-bottom: 60px;
+    border-top: 1px solid #eeeeee;
+}
+
+.main-part img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 36px;
+    margin-top: 15px;
+    border-radius: 75px;
+    border: 1px solid #eeeeee;
+}
+
+.main-part h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #df372c;
+}
+
     </style>
+    <title>Hello Linux</title>
 </head>
+
 <body>
-    <h1 style="text-align:center">Hello Linux</h1>
-    <div id="box">
-        Unix操作系统在20世纪60年代构思完成并实现，并在1970年首次发布。它因容易获取与可移植性高而广泛被学术机构和工商企业采用、复制和修改。它的设计对其他系统的作者影响很大。
-在1983年，理查德·斯托曼创建了一个自由软件，类Unix，与POSIX兼容的操作系统为目标的GNU计划。作为这个计划其中的一部分，他又写了GNU通用公共许可证（GPL）。20世纪90年代初，已经有足够的软件去创建一个完整的操作系统。但因为在1987年时，理查德·斯托曼决定以Mach微内核进行开发，认为可以借此加速操作系统的开发，但因为一直不确定卡内基梅隆大学何时要将核心源代码发布，造成项目三年进展缓慢。GNU的内核，GNU Mach和GNU Hurd没能够充分吸引开发者，这导致了GNU的未能完成。
-在20世纪80年代还有另外一个关于自由操作系统的项目，伯克利软件套件。这是由UC Berkeley从AT&T的第六版Unix开发而来的。因为它包含了AT&T所拥有的的Unix代码，所以AT&T在20世纪90年代初对加利福尼亚大学提起了法律诉讼。这严重限制了BSD的发展与应用。
-MINIX是安德鲁·斯图尔特·塔能鲍姆在1987年发布一个用于教学的微内核架构的类Unix系统。虽然系统的源代码容易得到，但是对源代码的修改与再发布却受到了限制。另外，MINIX的16位的设计与当时日渐便宜及受欢迎的、个人电脑的Intel 80386架构兼容得不好。
-这些因素使得Torvalds开始了他的项目。他曾说过，如果那时候有可用的GNU或者386BSD内核的话，他很可能就不会去写他自己的内核了。
-    </div>
+    <!-- header -->
+    <header class="w1200">
+        <img src="images/banner.jpg" alt="">
+    </header>
+    <nav class="w1200">
+        <ul>
+
+        </ul>
+    </nav>
+    <!-- 主体部分 -->
+    <section class="main">
+        <div class="main-intro">
+            <img src="./images/Tux.svg.png" alt="">
+            <h2 id="h0">Linux(一个极其优秀的操作系统)</h2>
+            <p>Linux是一种自由和开放源码的类UNIX操作系统。该操作系统的内核由林纳斯·托瓦兹在1991年10月5日首次发布[6][7]，
+                再加上用户空间的应用程序之后，就成为了Linux操作系统。Linux也是自由软件和开放源代码软件发展中最著名的例子。
+                只要遵循GNU 通用公共许可证（GPL），任何个人和机构都可以自由地使用Linux的所有底层源代码，也可以自由地修改和再发布。
+                大多数Linux系统还包括像提供GUI的X Window之类的程序。
+                除了一部分专家之外，大多数人都是直接使用Linux 发行版，而不是自己选择每一样组件或自行设置。</p>
+            <p>Linux严格来说是单指操作系统的内核，因操作系统中包含了许多用户图形接口和其他实用工具。
+                如今Linux常用来指基于Linux的完整操作系统，内核则改以Linux内核称之。
+                由于这些支持用户空间的系统工具和库主要由理查德·斯托曼于1983年发起的GNU计划提供，
+                自由软件基金会提议将其组合系统命名为GNU/Linux[8][9]，但Linux不属于GNU计划，这个名称并没有得到社群的一致认同。</p>
+            <p>Linux最初是作为支持英特尔x86架构的个人电脑的一个自由操作系统。目前Linux已经被移植到更多的计算机硬件平台，
+                远远超出其他任何操作系统。Linux可以运行在服务器和其他大型平台之上，如大型计算机和超级计算机。
+                世界上500个最快的超级计算机已100％运行Linux发行版或变种[10]。
+                Linux也广泛应用在嵌入式系统上，如手机（Mobile Phone）、平板电脑（Tablet）、路由器（Router）、电视（TV）和电子游戏机等
+                在移动设备上广泛使用的Android操作系统就是创建在Linux内核之上。</p>
+            <p>通常情况下，Linux被打包成供个人计算机和服务器使用的Linux发行版，一些流行的主流Linux发布版，
+                包括Debian（及其派生版本Ubuntu、Linux Mint）、Fedora（及其相关版本Red Hat Enterprise Linux）和openSUSE等。
+                Linux发行版包含Linux内核和支撑内核的实用程序和库，通常还带有大量可以满足各类需求的应用程序。
+                个人计算机使用的Linux发行版通常包含X Window和一个相应的桌面环境，如GNOME或KDE。
+                桌面Linux操作系统常用的应用程序，包括Firefox网页浏览器、LibreOffice办公软件、GIMP图像处理工具等。
+                由于Linux是自由软件，任何人都可以创建一个符合自己需求的Linux发行版。</p>
+
+        </div>
+        <div class="main-part">
+            <h3 id="h1">相关人物</h3>
+            <ul>
+                <li>
+                    <img src="images/Linus_Torvalds_(cropped).jpg" alt="">
+                    <h4 id="h2">linux内核的首创者</h4>
+                    <p>林纳斯·班奈狄克·托瓦兹（瑞典语：Linus Benedict Torvalds，瑞典语：[ˈliːn.ɵs ˈtuːr.valds] ，1969年12月28日－），生于芬兰赫尔辛基市，拥有美国国籍，Linux内核的最早作者，随后发起了这个开源项目，担任Linux内核的首要架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了开源项目Git，并为主要的开发者。
+                    </p>
+                </li>
+                <li>
+                    <img src="images/353px-AndrewTanenbaum.jpg" alt="">
+                    <h4 id="h3"> 安德鲁·斯图尔特·特南鲍姆</h4>
+                    <p>安德鲁·斯图尔特·特南鲍姆（Andrew Stuart "Andy" Tanenbaum，1944年3月16日－），昵称“安迪”，网络上的代号为“ast”，生于美国纽约市，电脑科学家，专长于操作系统，为荷兰阿姆斯特丹自由大学的电脑科学教授。他最早以Minix(一个免费用于教学目的的类Unix操作系统)作者的身份以及所编写的电脑科学教科书而为人熟知。
+                   他把教学视作自己最重要的一项工作。可以说他的作品启发了linux的发明者</p>
+                </li>
+                <li>
+                    <img src="images/Richard_Stallman_at_LibrePlanet_2019.jpg" alt="">
+                    <h4 id="h4">理查德·斯托曼</h4>
+                    <p>理查德·马修·斯托曼（英语：Richard Matthew Stallman，简称rms，有时也用大写的RMS[1]，1953年3月16日－），美国程序员，自由软件活动家。他发起自由软件运动，倡导软件使用者能够对软件自由进行使用、学习、共享和修改，确保了这些软件被称作自由软件。斯托曼发起了GNU项目，并成立了自由软件基金会。他开发了GCC、GDB、GNU Emacs，同时编写了GNU通用公共许可协议。
+                    为了创建一个完全由自由软件组成的类Unix计算机操作系统，斯托曼在1983年9月推出了GNU项目。借此又发起了自由软件运动。他迄今为止一直是GNU项目的组织者，作为主要开发者的他开发了一些被广泛使用的GNU软件，其中包括GCC、GDB、GNU Emacs。在1985年10月他创立了自由软件基金会。</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
+
 </html>
