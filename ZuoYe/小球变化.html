@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script type="text/javascript">
+    var s = '仰天大笑出门去 我辈岂是蓬蒿人'
+    for(var i=1;i<=100;i++) {
+        var divDom = document.createElement('div');
+        divDom.textContent = s;
+        function p(dom) {
+            var x = Math.floor(Math.random() * window.innerWidth);
+            var y = Math.floor(Math.random() * window.innerHeight);
+            dom.style.left = x + 'px';
+            dom.style.top = y + 'px';
+        }
+        p(divDom);
+        divDom.onmouseover = function (){
+            p(this);
+        }
+        document.body.appendChild(divDom);
+    }
+</script>
+<style type="text/css">
+    div {
+        color: black;
+        border: 1px solid #3db8da;
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        text-align: center;
+        padding: 3%;
+        background-color: rgba(137, 207, 240, 0.2);
+        margin: 2%;
+        border-radius: 50%;
+        word-break: keep-all;
+        word-wrap: break-word;
+        position: relative;
+        font-family: "宋体";
+    }
+    body{
+        background-image: url("./1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+</style>
+</body>
+</html>
